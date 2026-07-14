@@ -8,3 +8,7 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+from flask import Flask, render_template, request
+@app.route("/predict", methods=["POST"])
+def predict():
+    return "AI Caption will appear here."
